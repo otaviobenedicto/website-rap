@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+:root{
+    --red:rgb(119, 62, 55);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: rgba(210, 214, 210, 0.667);
+}
+/*----------------GLOBAL------------------*/
+
+.container{
+    max-width: 90%;
+    margin: auto;
+    padding:0 0 3% 0;
+}
+.flexSB{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+p{
+    font-size: 17px;
+    line-height: 30px;
+}
+/*----------------GLOBAL------------------*/
+
+/*----------------HEADER------------------*/
+
+header{
+    height: 10%;
+    line-height: 8vh;
+}
+.logo img{
+    padding: 5px;
+}
+.toggle{
+    font-size: 25px;
+    color: #0062d4;
+    cursor: pointer;
+    background: none;
+}
+ul.nav-links{
+    display: none;
+}
+ul.nav-links-sidebar{
+    position: absolute;
+    display: block;
+    background-color: #0062d4;
+    left: 0;
+    top: 17.5%;
+    transition: 0.5s;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    margin-bottom: 20px;
+    padding-left: 5%;
+}
+header ul li{
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+header ul li>a{
+    text-decoration: none;
+    color: #fff;
+}
+/*----------------HEADER------------------*/
+/*-----------------HOME-------------------*/
+.home{
+    position: relative;
+}
+.home .itemContent{
+    padding: 10px;
+    position: relative;
+    border: 5px solid rgb(17, 92, 204);
+    height: 90vh;
+}
+.home div.left{
+    width: 30%;
+    margin-left:5%;
+}
+.home div.right{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+.home div.right img{
+    width: 100%;
+    height: 100%;
+}
+.home h1{
+    font-size: 2.5em;
+    word-wrap: break-word;
+    margin: 20px 0;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+.home p{
+    font-size: 1.2em;
+}
+/*-----------------HOME-------------------*/
+/*-----------------ABOUT------------------*/
+
+.about{
+    position: relative;
+}
+.itemContent{
+    position: relative;
+    border: 5px solid rgb(17, 92, 204);
+    height: 90vh;
+    display: flex;
+}
+.flex{
+    display: flex;
+}
+.sideHearing{
+    height: 85vh;
+    background-color: #222222;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sideHearing h1{
+    position: absolute;
+    top: 42%;
+    left: -60px;
+    margin: auto;
+    font-size: 2.1em;
+    transform: rotate(-90deg);
+    font-weight: 500;
+}
+.sideHearing h1 i{
+    color: var(--red);
+    margin-right: 20px;
+}
+.contentRight,.contentLeft{
+    width: 39vw;
+    padding:0 50px;
+    position: relative;
+}
+.about .contentLeft{
+    padding-top: 15%;
+}
+.about h2{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+}
+.about .h2Top{
+    width: 170px;
+}
+.about .details{
+    margin-bottom: 20px;
+}
+.primary-btn{
+    margin-top: 10%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: var(--red);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.primary-btn:hover{
+    background-color: #fff;
+    color: var(--red);
+}
+.about .contentLeft ::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../public/imagens/about-tupac.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.about .heading h1{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 40px 0;
+    word-spacing: 5px;
+}
+.about .contentRight{
+    padding: 0;
+}
+.about .para{
+    background-color: #2f2f2f;
+    padding: 66px;
+}
+.about .para h3{
+    margin: 30px 0;
+    font-size: 1.2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*-----------------ABOUT------------------*/
+
+/*---------------CREATIVE-----------------*/
+.creative{
+    position: relative;
+}
+.creative .sideHearing h1{
+    left: -50px;
+}
+.creative .contentRight{
+    padding: 0;
+}
+.creative img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.creative .quote{
+    font-size: 2.5em;
+    color: var(--red);
+    margin: 20px;
+}
+.creative .content h1{
+    font-size: 1.9em;
+    font-weight: 500;
+}
+.creative .content h3{
+    color: var(--red);
+    margin: 40px 0 20px 0;
+    font-weight: 400;
+    font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*---------------CREATIVE-----------------*/
