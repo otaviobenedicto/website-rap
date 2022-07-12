@@ -1,5 +1,6 @@
 :root{
     --red:rgb(119, 62, 55);
+    --blue:#0062d4
 }
 *{
     margin: 0;
@@ -40,7 +41,7 @@ header{
 }
 .toggle{
     font-size: 25px;
-    color: #0062d4;
+    color: var(--blue);
     cursor: pointer;
     background: none;
 }
@@ -50,7 +51,7 @@ ul.nav-links{
 ul.nav-links-sidebar{
     position: absolute;
     display: block;
-    background-color: #0062d4;
+    background-color: var(--blue);
     left: 0;
     top: 17.5%;
     transition: 0.5s;
@@ -76,7 +77,7 @@ header ul li>a{
 .home .itemContent{
     padding: 10px;
     position: relative;
-    border: 5px solid rgb(17, 92, 204);
+    border: 2px solid var(--blue);
     height: 90vh;
 }
 .home div.left{
@@ -111,7 +112,7 @@ header ul li>a{
 }
 .itemContent{
     position: relative;
-    border: 5px solid rgb(17, 92, 204);
+    border: 3px solid var(--blue);
     height: 90vh;
     display: flex;
 }
@@ -119,7 +120,7 @@ header ul li>a{
     display: flex;
 }
 .sideHearing{
-    height: 85vh;
+    height: 100%;
     background-color: #222222;
     width: 150px;
     display: flex;
@@ -191,6 +192,7 @@ header ul li>a{
     padding: 0;
 }
 .about .para{
+    height: 60%;
     background-color: #2f2f2f;
     padding: 66px;
 }
@@ -198,7 +200,6 @@ header ul li>a{
     margin: 30px 0;
     font-size: 1.2em;
 }
-
 /*-----------------ABOUT------------------*/
 
 /*---------------CREATIVE-----------------*/
@@ -232,5 +233,90 @@ header ul li>a{
     font-size: 20px;
 }
 
-
 /*---------------CREATIVE-----------------*/
+/*----------EDUCATION----------*/
+.education .box {
+    margin-top: 20px;
+  }
+  .education .content h1 {
+    font-size: 40px;
+    color: var(--red);
+    margin-right: 30px;
+  }
+  .education .content h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .education .contentLeft {
+    padding: 80px 50px;
+  }
+  /*----------EDUCATION----------*/
+  /*----------WORK----------*/
+.work button {
+    width: 250px;
+    margin: 0;
+    height: 30px;
+    padding: 0 0;
+  }
+  .work.education h2 {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .work h2 p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  /*----------WORK----------*/
+  /*----------PORTIFOLIO----------*/
+.portfolio {
+    position: relative;
+  }
+  .portfolio h1 {
+    font-size: 50px;
+    margin: 40px 0;
+  }
+  .portfolio p {
+    margin-bottom: 30px;
+  }
+  ul {
+    list-style: none;
+  }
+  .portfolio ul li {
+    margin: 15px 0;
+  }
+  .portfolio ul i {
+    color: #1ebd65;
+    margin-right: 20px;
+  }
+  .portfolio .sideHeading h1 {
+    left: -70px;
+  }
+  /*----------PORTIFOLIO----------*/
+  /*----------contact----------*/
+.contact .content i {
+    width: 40px;
+    font-size: 20px;
+    color: #1ebd65;
+  }
+  .contact .contentLeft {
+    padding: 50px;
+  }
+  form {
+    margin-top: 30px;
+  }
+  form textarea,
+  form input {
+    width: 100%;
+    padding: 15px;
+    background: none;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    background: #2b2b2b;
+    color: #6a6a6a;
+  }
+  form textarea {
+    margin: 0;
+  }
+  /*----------contact----------*/
