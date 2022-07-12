@@ -17,7 +17,7 @@ const Portfolio = () => {
   }
   return (
     <>
-      <section className='portfolio creative'>
+      <section className='portfolio creative' id="port">
         <div className='container'>
           <Slider {...settings}>
             {portfolio.map((val) => {

@@ -4,7 +4,7 @@ import Common from './common/Common.jsx'
 
 const About = () => {
     return (
-        <section className='about'>
+        <section className='about' id='about'>
             <div className="container">
                 <div className="itemContent">
                     <Common title='about me'/>

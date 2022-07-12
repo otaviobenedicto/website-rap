@@ -6,7 +6,7 @@ import Common from "./common/Common"
 const Work = () => {
   return (
     <>
-      <section className='work creative education'>
+      <section className='work creative education' id="work">
         <div className='container'>
           <div className='itemContent'>
             <Common title='empolye' />

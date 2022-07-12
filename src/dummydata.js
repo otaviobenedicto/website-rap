@@ -1,7 +1,7 @@
 export const homedata = [
     {
       id: 1,
-      name: "Hello!  My Name is Beckham Roy",
+      name: "Beck Roy",
       desc: "I design thoughtful digital experiences & beautiful brand aesthetics. I provide high quality web development services.",
       cover: "./imagens/home/home-slider-1.jpg",
       signature: "./imagens/home/signature1.png",
@@ -31,7 +31,7 @@ export const homedata = [
       nation: "United States",
       heading: "Short History",
       title: "I'm a UI/UX Designer & Frontend Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.",
-      desc: "Worked with project teams to create user-friendly and appealing application interfaces and websites for users. Met with project manager, business analyst and architect right from beginning of project, creating rough mock-ups that were refined and extended over many iterations. Adjustments to mock-ups as necessary to address problems encountered.",
+      desc: "Met with project manager, business analyst and architect right from beginning of project, creating rough mock-ups that were refined and extended over many iterations. Adjustments to mock-ups as necessary to address problems encountered.",
     },
   ]
   

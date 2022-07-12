@@ -1,56 +1,76 @@
-:root{
-    --red:rgb(119, 62, 55);
-    --blue:#0062d4
+@import url(//db.onlinewebfonts.com/c/b4cb647fac43ac91c31c5848ec4cf252?family=Vells+Mono+Light);
+@import url(//db.onlinewebfonts.com/c/0a39714493702a68b95703c8ad85c974?family=Vells+Mono);
+
+:root {
+    --red: rgb(119, 62, 55);
+    --blue: #0062d4
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: black;
     color: rgba(210, 214, 210, 0.667);
 }
+
 /*----------------GLOBAL------------------*/
 
-.container{
+.container {
     max-width: 90%;
     margin: auto;
-    padding:0 0 3% 0;
+    padding: 0 0 3% 0;
 }
-.flexSB{
+
+.flexSB {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
-p{
+
+p {
     font-size: 17px;
     line-height: 30px;
+    font-family: "Vells Mono Light",sans-serif;
+    font-weight: 900;
 }
+
 /*----------------GLOBAL------------------*/
 
 /*----------------HEADER------------------*/
 
-header{
+header {
     height: 10%;
     line-height: 8vh;
 }
-.logo img{
+
+header .container {
+    max-width: 90%;
+    margin: auto;
+    padding: 0;
+}
+
+.logo img {
     padding: 5px;
 }
-.toggle{
+
+.toggle {
     font-size: 25px;
     color: var(--blue);
     cursor: pointer;
     background: none;
 }
-ul.nav-links{
+
+ul.nav-links {
     display: none;
 }
-ul.nav-links-sidebar{
+
+ul.nav-links-sidebar {
     position: absolute;
-    display: block;
     background-color: var(--blue);
     left: 0;
     top: 17.5%;
@@ -59,67 +79,90 @@ ul.nav-links-sidebar{
     height: auto;
     z-index: 5;
     margin-bottom: 20px;
-    padding-left: 5%;
 }
-header ul li{
-    margin-bottom: 30px;
+
+header ul li {
+    margin-bottom: 5px;
     list-style-type: none;
+    cursor: pointer;text-align: center;
 }
-header ul li>a{
+
+header ul li>a {
+    font-family: "Vells Mono Light";
+    font-size: 1.3em;
     text-decoration: none;
     color: #fff;
+    padding: 10px;
+    
 }
+
+header ul li:hover {
+    background-color: rgb(32, 77, 226);
+}
+
 /*----------------HEADER------------------*/
 /*-----------------HOME-------------------*/
-.home{
+.home {
     position: relative;
 }
-.home .itemContent{
+
+.home .itemContent {
     padding: 10px;
     position: relative;
     border: 2px solid var(--blue);
     height: 90vh;
 }
-.home div.left{
+
+.home div.left {
     width: 30%;
-    margin-left:5%;
+    margin-left: 5%;
 }
-.home div.right{
+
+.home div.right {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     z-index: -1;
 }
-.home div.right img{
+
+.home div.right img {
     width: 100%;
     height: 100%;
 }
-.home h1{
-    font-size: 2.5em;
+
+.home h1 {
+    font-size: 3.5em;
     word-wrap: break-word;
     margin: 20px 0;
     line-height: 50px;
     letter-spacing: 2px;
+    font-family: "Vells Mono",sans-serif;
 }
-.home p{
-    font-size: 1.2em;
+
+.home p {
+    font-size: 1.1em;
+    font-family: "Vells Mono Light",sans-serif;
 }
+
 /*-----------------HOME-------------------*/
 /*-----------------ABOUT------------------*/
 
-.about{
+.about {
     position: relative;
 }
-.itemContent{
+
+.itemContent {
     position: relative;
     border: 3px solid var(--blue);
-    height: 90vh;
+    height: 95vh;
     display: flex;
 }
-.flex{
+
+.flex {
     display: flex;
 }
-.sideHearing{
+
+.sideHearing {
     height: 100%;
     background-color: #222222;
     width: 150px;
@@ -127,7 +170,8 @@ header ul li>a{
     justify-content: center;
     align-items: center;
 }
-.sideHearing h1{
+
+.sideHearing h1 {
     position: absolute;
     top: 42%;
     left: -60px;
@@ -135,31 +179,44 @@ header ul li>a{
     font-size: 2.1em;
     transform: rotate(-90deg);
     font-weight: 500;
+    font-family: "Vells Mono",sans-serif;
 }
-.sideHearing h1 i{
+
+.sideHearing h1 i {
     color: var(--red);
     margin-right: 20px;
 }
-.contentRight,.contentLeft{
+
+.contentRight,
+.contentLeft {
     width: 39vw;
-    padding:0 50px;
+    padding: 0 50px;
     position: relative;
 }
-.about .contentLeft{
+
+.about .contentLeft {
     padding-top: 15%;
 }
-.about h2{
+
+.about h2 {
     font-weight: 500;
     font-size: 20px;
     padding: 10px;
+    font-family: "Vells Mono Light",sans-serif;
+    text-shadow: 1.5px 2.2px 1.5px black;
+    font-weight: 900;
 }
-.about .h2Top{
+
+.about .h2Top {
     width: 170px;
+    font-family: "Vells Mono",sans-serif;
 }
-.about .details{
+
+.about .details {
     margin-bottom: 20px;
 }
-.primary-btn{
+
+.primary-btn {
     margin-top: 10%;
     padding: 10px 30px;
     border-radius: 10px;
@@ -167,11 +224,13 @@ header ul li>a{
     cursor: pointer;
     transition: 0.5s;
 }
-.primary-btn:hover{
+
+.primary-btn:hover {
     background-color: #fff;
     color: var(--red);
 }
-.about .contentLeft ::after{
+
+.about .contentLeft ::after {
     content: "";
     position: absolute;
     top: 0;
@@ -182,131 +241,180 @@ header ul li>a{
     height: 100%;
     z-index: -1;
 }
-.about .heading h1{
+
+.about .heading h1 {
     font-size: 2.5em;
     text-align: center;
     padding: 40px 0;
     word-spacing: 5px;
+    font-family: "Vells Mono",sans-serif;
+    font-weight: 800;
 }
-.about .contentRight{
+
+.about .contentRight {
     padding: 0;
 }
-.about .para{
-    height: 60%;
+
+.about .para {
+    margin: 5px;
+    height: 80%;
     background-color: #2f2f2f;
     padding: 66px;
+    font-family: "Vells Mono",sans-serif;
 }
-.about .para h3{
+
+.about .para h3 {
     margin: 30px 0;
     font-size: 1.2em;
 }
+
 /*-----------------ABOUT------------------*/
 
 /*---------------CREATIVE-----------------*/
-.creative{
+.creative {
     position: relative;
 }
-.creative .sideHearing h1{
+
+.creative .sideHearing h1 {
     left: -50px;
+    font-family: "Vells Mono",sans-serif;
+    font-weight: 900;
 }
-.creative .contentRight{
+
+.creative .contentRight {
     padding: 0;
 }
-.creative img{
+
+.creative img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.creative .quote{
+
+.creative .quote {
     font-size: 2.5em;
     color: var(--red);
     margin: 20px;
 }
-.creative .content h1{
+
+.creative .content h1 {
     font-size: 1.9em;
     font-weight: 500;
+    font-family: "Vells Mono",sans-serif;
+    font-weight: 800;
 }
-.creative .content h3{
+
+.creative .content h3 {
     color: var(--red);
     margin: 40px 0 20px 0;
     font-weight: 400;
     font-size: 20px;
+    font-family: "Vells Mono",sans-serif;
 }
 
 /*---------------CREATIVE-----------------*/
 /*----------EDUCATION----------*/
 .education .box {
     margin-top: 20px;
-  }
-  .education .content h1 {
+}
+
+.education .content h1 {
     font-size: 40px;
     color: var(--red);
     margin-right: 30px;
-  }
-  .education .content h2 {
+    font-family: "Vells Mono",sans-serif;
+    font-weight: 800;
+}
+
+.education .content h2 {
     font-size: 18px;
     font-weight: 500;
-  }
-  .education .contentLeft {
-    padding: 80px 50px;
-  }
-  /*----------EDUCATION----------*/
-  /*----------WORK----------*/
+    font-family: "Vells Mono Light",sans-serif;
+}
+
+.education .contentLeft {
+    padding: 0 50px;
+}
+
+/*----------EDUCATION----------*/
+/*----------WORK----------*/
 .work button {
     width: 250px;
     margin: 0;
     height: 30px;
     padding: 0 0;
-  }
-  .work.education h2 {
+}
+
+.work.education h2 {
     margin-left: 20px;
     font-weight: 600;
     font-size: 20px;
-  }
-  .work h2 p {
+    font-family: "Vells Mono",sans-serif;
+    font-weight: 500;
+}
+
+.work h2 p {
     font-size: 15px;
     font-weight: 400;
-  }
-  /*----------WORK----------*/
-  /*----------PORTIFOLIO----------*/
+    font-family: "Vells Mono Light",sans-serif;
+}
+
+/*----------WORK----------*/
+/*----------PORTIFOLIO----------*/
 .portfolio {
     position: relative;
-  }
-  .portfolio h1 {
-    font-size: 50px;
+}
+
+.portfolio h1 {
+    font-family: "Vells Mono",sans-serif;
+    font-weight: 800;
     margin: 40px 0;
-  }
-  .portfolio p {
+}
+
+.portfolio p {
     margin-bottom: 30px;
-  }
-  ul {
+    font-family: "Vells Mono Light",sans-serif;
+}
+
+ul {
     list-style: none;
-  }
-  .portfolio ul li {
-    margin: 15px 0;
-  }
-  .portfolio ul i {
-    color: #1ebd65;
+}
+
+.portfolio ul li {
+    margin: 10px 0;
+    font-family: "Vells Mono Light",sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+
+}
+
+.portfolio ul i {
+    color: var(--red);
     margin-right: 20px;
-  }
-  .portfolio .sideHeading h1 {
+}
+
+.portfolio .sideHeading h1 {
     left: -70px;
-  }
-  /*----------PORTIFOLIO----------*/
-  /*----------contact----------*/
+}
+
+/*----------PORTIFOLIO----------*/
+/*----------CONTACT----------*/
 .contact .content i {
     width: 40px;
     font-size: 20px;
-    color: #1ebd65;
-  }
-  .contact .contentLeft {
+    color: var(--red);
+}
+
+.contact .contentLeft {
     padding: 50px;
-  }
-  form {
+}
+
+form {
     margin-top: 30px;
-  }
-  form textarea,
-  form input {
+}
+
+form textarea,
+form input {
     width: 100%;
     padding: 15px;
     background: none;
@@ -314,9 +422,13 @@ header ul li>a{
     border: none;
     margin-bottom: 20px;
     background: #2b2b2b;
-    color: #6a6a6a;
-  }
-  form textarea {
+    color: #fff;
+    font-family: "Vells Mono Light",sans-serif;
+    font-weight: 900;
+    font-size: 0.75em;
+}
+
+form textarea {
     margin: 0;
-  }
-  /*----------contact----------*/
+}
+/*----------contact----------*/

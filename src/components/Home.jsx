@@ -14,7 +14,7 @@ const Home = () => {
     };
     return (
         <div>
-            <section className='home'>
+            <section className='home' id='home'>
                 <div className='container'>
                     <Slider {...settings}>
                         {homedata.map((val) => {

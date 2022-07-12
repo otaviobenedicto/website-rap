@@ -6,7 +6,7 @@ import imgRap from "../../src/components/img/rap-img.jpg"
 const Education = () => {
   return (
     <>
-      <section className='education creative'>
+      <section className='education creative' id="education">
         <div className='container'>
           <div className='itemContent'>
             <Common title='education' />

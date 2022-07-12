@@ -5,7 +5,7 @@ import { creative } from "../dummydata.js"
 const Creative = () => {
     return (
         <>
-            <section className='creative'>
+            <section className='creative' id='creative'>
                 <div className="container">
                     <div className="itemContent">
                         <Common title={'creative'}/>
